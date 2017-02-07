@@ -15,7 +15,7 @@ namespace FirstLinqUsing
                 array[i] = random.Next(-100, 100);
             }
 
-            Console.WriteLine(string.Join(" ", array.Where(x => x > 5 && x % 2 == 0).OrderBy(x => x)));
+            Console.WriteLine(string.Join(" ", array.Where(x => x > 5 || x % 2 == 0).OrderBy(x => x)));
 
             Console.ReadKey();
         }
