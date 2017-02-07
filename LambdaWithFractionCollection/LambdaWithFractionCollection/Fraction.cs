@@ -9,7 +9,8 @@ namespace LambdaWithFractionCollection
 
         public Fraction(long numerator, long denominator)
         {
-            if(denominator == 0) throw new DivideByZeroException("Denominator can't be zero");
+            if(denominator == 0) 
+                throw new DivideByZeroException("Denominator can't be zero");
 
             Numerator = numerator;
             Denominator = denominator;
